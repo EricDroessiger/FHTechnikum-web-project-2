@@ -13,6 +13,7 @@ const emit = defineEmits<{
   (event: 'delete', id: number): void
 }>()
 
+
 function requestDelete() {
   emit('delete', props.note.id)
 }

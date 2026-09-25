@@ -1,3 +1,7 @@
+/*composables/useLocalStorage.js übernimmt das Speichern und Laden. Wichtig:
+Die localStorage-Zugriffe gehören hierher, nicht verstreut in die Komponenten.
+useNotes verwendet useLocalStorage. */
+
 import { ref, watch } from 'vue'
  
 // Liest einen Wert beim Start aus localStorage und schreibt ihn bei jeder Änderung zurück.
