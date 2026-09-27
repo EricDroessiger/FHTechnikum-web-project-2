@@ -70,7 +70,7 @@ function submitNote() {
       <textarea 
         id="note-content" 
         v-model="content" 
-        placeholder="Schreibe deine Notiz hier ..."
+        placeholder="Notiz ..."
       ></textarea>
     
 
@@ -80,7 +80,7 @@ function submitNote() {
         id="note-tags"
         v-model="tagsInput"
         type="text"
-        placeholder="Vue, Hausübung, Uni"
+        placeholder="Tag1, Tag2, Tag3"
       >
 
 

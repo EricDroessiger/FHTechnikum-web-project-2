@@ -13,3 +13,6 @@ Prompt: „Wie verbinde ich in Vue ein Formular, das per emit('add', note) eine 
 Geändert/verstanden: App.vue ist die Vermittlungsstelle zwischen Komponenten und Composable. NoteForm erstellt keine Liste selbst, und NoteCard erhält einzelne Notizen nur über Props.
 
 ---
+
+
+

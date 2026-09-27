@@ -5,7 +5,15 @@ sodass sie sich mit v-model einbinden lässt (Thema C).*/
 
 <script setup lang="ts">
 defineProps(['modelValue'])
-defineEmits(['update:modelValue'])
+
+const emit = defineEmits(['update:modelValue'])
+
+function updateModelValue(event: Event) {
+  if (event.target instanceof HTMLInputElement) {
+    emit('update:modelValue', event.target.value)
+  }
+}
+
 </script>
  
 <template>
